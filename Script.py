@@ -1,22 +1,22 @@
 class script(object):
-    START_TXT = """<b>🙏 ආයුබෝවන් {}\nMovieClub Family සමූහයේ චිත්‍රපට හා රූපවාහිනී කතාමාලා ලබාදෙන Bot තමයි මම.</b>\n\n <i>ඒ වගේම අපේ සමූහයෙන් ඔයාට චිත්‍රපටි ගන්න ඕනෙනම් අපෙ MovieClub Updates චැනල් එකට Join වෙලා ඉන්න ඕනි. පල්ලෙහා 👇 Updates කියන Button එක ඔබලා අපේ චැනල් එකට Join වෙන්න. ❤️</i>"""
+    START_TXT = """<b>🙏 ආයුබෝවන් {}\nSubscenelk සමූහයේ චිත්‍රපට හා රූපවාහිනී කතාමාලා ලබාදෙන Bot මමයි.</b>\n\n <i>ඒ වගේම අපේ සමූහයෙන් ඔයාට චිත්‍රපටි ගන්න ඕනෙනම් අපෙ Subscenelk චැනල් එකට Join වෙලා ඉන්න ඕනි. පල්ලෙහා 👇 Updates කියන Button එක ඔබලා අපේ චැනල් එකට Join වෙන්න. ❤️</i>"""
     HELP_TXT = """Hey {}
 Here Is The Help For My Commands."""
-    ABOUT_TXT = """<b><i>🤖 My Name : MCF Premium Bot\n
-👨‍💻 Developer : MCF\n
+    ABOUT_TXT = """<b><i>🤖 My Name : Subscenelk Premium Bot\n
+👨‍💻 Developer : Subscenelk\n
 📝 Language : Pyrogram\n
 📚 Framework : Python 3\n
 📡 Hosted On : VPS\n
-📢 Updates Channel : <a href=https://t.me/MovieClubUpdates><b></b>Click Here</a>\n
+📢 Updates Channel : <a href=https://t.me/Subscenelk><b></b>Click Here</a>\n
 🌟 Version : V 1.0\n</b></i>"""
     SOURCE_TXT = """<b>NOTE:</b>
 - MCF Premium Bot is a Closed source project. 
 <b>DEVS:</b>
-- <a href=https://t.me/IamBlackEmpire>IamBlackEmpire</a>"""
+- <a href=https://subscenelk.com>Subscenelk</a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
-- Filter is the feature were users can set automated replies for a particular keyword and MCF Premium Bot will respond whenever a keyword is found the message
+- Filter is the feature were users can set automated replies for a particular keyword and Subscenelk Premium Bot will respond whenever a keyword is found the message
 <b>NOTE:</b>
-1. MCF Premium Bot should have admin privillage.
+1. Subscenelk Premium Bot should have admin privillage.
 2. only admins can add filters in a chat.
 3. alert buttons have a limit of 64 characters.
 <b>Commands and Usage:</b>
@@ -25,13 +25,13 @@ Here Is The Help For My Commands."""
 • /del - <code>delete a specific filter in chat</code>
 • /delall - <code>delete the whole filters in a chat (chat owner only)</code>"""
     BUTTON_TXT = """Help: <b>Buttons</b>
-- MCF Premium Bot Supports both url and alert inline buttons.
+- Subscenelk Premium Bot Supports both url and alert inline buttons.
 <b>NOTE:</b>
 1. Telegram will not allows you to send buttons without any content, so content is mandatory.
-2. MCF Premium Bot supports buttons with any telegram media type.
+2. Subscenelk Premium Bot supports buttons with any telegram media type.
 3. Buttons should be properly parsed as markdown format
 <b>URL buttons:</b>
-<code>[Button Text](buttonurl:https://t.me/MCF_PremiumBot)</code>
+<code>[Button Text](buttonurl:https://subscenelk.com)</code>
 <b>Alert buttons:</b>
 <code>[Button Text](buttonalert:This is an alert message)</code>"""
     AUTOFILTER_TXT = """Help: <b>MCF Premium Bot</b>
