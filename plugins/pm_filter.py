@@ -135,7 +135,7 @@ async def advantage_spoll_choker(bot, query):
             k = (movie, files, offset, total_results)
             await auto_filter(bot, query, k)
         else:
-            k = await query.message.edit('<b>ඔයා ඉල්ලන Film එක හෝ Series එක මගෙ DataBase එකේ නැහැ. @MovieClubFamily_Chat ගෲප් එකට ඇවිත් ඇඩ්මින් කෙනෙක් දැනුවත් කරලා ෆිල්ම් එක ඉල්ලගන්න. 😇</b>')
+            k = await query.message.edit('<b>ඔයා ඉල්ලන Film එක හෝ Series එක මගෙ DataBase එකේ නැහැ. @SubsceneLk_Chat ගෲප් එකට ඇවිත් ඇඩ්මින් කෙනෙක් දැනුවත් කරලා ෆිල්ම් එක ඉල්ලගන්න. 😇</b>')
             await asyncio.sleep(10)
             await k.delete()
 
@@ -407,7 +407,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ], [
             InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/MovieClubUpdates')
+            InlineKeyboardButton('🤖 Updates', url='https://t.me/Subscenelk')
         ], [
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
@@ -438,7 +438,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons = [[
-            InlineKeyboardButton('🤖 Updates', url='https://t.me/MovieClubUpdates'),
+            InlineKeyboardButton('🤖 Updates', url='https://t.me/Subscenelk'),
             InlineKeyboardButton('♥️ Source', callback_data='source')
         ], [
             InlineKeyboardButton('🏠 Home', callback_data='start'),
@@ -708,7 +708,7 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>ඔයා Type කරපු නම : {search}\n\nඔයා හොයන ෆිල්ම් එක හෝ ටීවි සීරිස් එක Group එකේ නැද්ද ? 🤕\n\nඑහෙනම් අපේ @MovieClubFamily_Chat Group එකට ඇවිත් අපිව Mention කරලා ඒ ෆිල්ම් එක හෝ සීරිස් එක ඉල්ලගන්න. 🤗\n\nඋදා : Endgame 2019 </b>"
+        cap = f"<b>ඔයා Type කරපු නම : {search}\n\nඔයා හොයන ෆිල්ම් එක හෝ ටීවි සීරිස් එක Group එකේ නැද්ද ? 🤕\n\nඑහෙනම් අපේ @SubsceneLk_Chat Group එකට ඇවිත් අපිව Mention කරලා ඒ ෆිල්ම් එක හෝ සීරිස් එක ඉල්ලගන්න. 🤗\n\nඋදා : Hridayam 2022 </b>"
     if imdb and imdb.get('poster'):
         try:
             await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
