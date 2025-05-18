@@ -34,7 +34,7 @@ Here Is The Help For My Commands."""
 <code>[Button Text](buttonurl:https://subscenelk.com)</code>
 <b>Alert buttons:</b>
 <code>[Button Text](buttonalert:This is an alert message)</code>"""
-    AUTOFILTER_TXT = """Help: <b>MCF Premium Bot</b>
+    AUTOFILTER_TXT = """Help: <b>Subscenelk Premium Bot</b>
 <b>NOTE:</b>
 1. Make me the admin of your channel if it's private.
 2. make sure that your channel does not contains camrips, porn and fake files.
@@ -52,7 +52,7 @@ Here Is The Help For My Commands."""
 • /connections - <code>list all your connections</code>"""
     EXTRAMOD_TXT = """Help: <b>Extra Modules</b>
 <b>NOTE:</b>
-these are the extra features of MCF Premium Bot
+these are the extra features of Subscenelk Premium Bot
 <b>Commands and Usage:</b>
 • /id - <code>get id of a specifed user.</code>
 • /info  - <code>get information about a user.</code>
