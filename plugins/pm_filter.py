@@ -120,7 +120,7 @@ async def next_page(bot, query):
 async def advantage_spoll_choker(bot, query):
     _, user, movie_ = query.data.split('#')
     if int(user) != 0 and query.from_user.id != int(user):
-        return await query.answer("okDa", show_alert=True)
+        return await query.answer("You are clicking on an old button which is expired Send your File Name To The Group,මේක කල් ඉකුත් වෙලා ආපහු ගෘප් එකට ඔයා හොයන ෆයිල් එකේ නම දාන්න වෙනවා", show_alert=True)
     if movie_ == "close_spellcheck":
         return await query.message.delete()
     movies = SPELL_CHECK.get(query.message.reply_to_message.id)
@@ -708,7 +708,15 @@ async def auto_filter(client, msg, spoll=False):
             **locals()
         )
     else:
-        cap = f"<b>ඔයා Type කරපු නම : {search}\n\nඔයා හොයන ෆිල්ම් එක හෝ ටීවි සීරිස් එක Group එකේ නැද්ද ? 🤕\n\nඑහෙනම් අපේ @SubsceneLk_Chat Group එකට ඇවිත් අපිව Mention කරලා ඒ ෆිල්ම් එක හෝ සීරිස් එක ඉල්ලගන්න. 🤗\n\nඋදා : Hridayam 2022 </b>"
+      cap = (
+    f"<b>📝 ඔයා Type කරපු නම:</b> <code>{search}</code>\n\n"
+    "🤔 <b>ඔයා හොයන ෆිල්ම් එක හෝ ටීවි සීරිස් එක group එකේ නැද්ද?</b>\n\n"
+    "📩 <b>එහෙනම් අපේ <a href='https://t.me/SubsceneLk_Chat'>@SubsceneLk_Chat</a> group එකට ඇවිත්</b> "
+    "අපිව <b>Mention</b> කරලා ඒ ෆිල්ම් එක හෝ සීරිස් එක ඉල්ලගන්න. 🤗\n\n"
+    "📌 <b>උදාහරණය (Movies):</b>\n<code>marco</code> or <code>marco 2024</code>\n\n"
+    "📺 <b>TV Series එකක් නම් මෙහෙම:</b>\n<code>Kingdom</code> or <code>Kingdom S01</code>"
+)
+
     if imdb and imdb.get('poster'):
         try:
             await message.reply_photo(photo=imdb.get('poster'), caption=cap[:1024],
